@@ -1,0 +1,139 @@
+<?xml version="1.1" encoding="utf-8"?>
+<rack><plugin type="xover3" instance-name="X-Over 3 Band" input-index="1" output-index="1">
+<preset bank="0" program="0" plugin="xover3" name="">
+  <param name="level" value="1" />
+  <param name="meter_L" value="0.00305892" />
+  <param name="meter_R" value="0.00300946" />
+  <param name="mode" value="1" />
+  <param name="freq0" value="114.88" />
+  <param name="freq1" value="2022.76" />
+  <param name="level1" value="1" />
+  <param name="active1" value="1" />
+  <param name="phase1" value="0" />
+  <param name="delay1" value="0" />
+  <param name="meter_L1" value="0.00125892" />
+  <param name="meter_R1" value="0.00123049" />
+  <param name="level2" value="1" />
+  <param name="active2" value="1" />
+  <param name="phase2" value="0" />
+  <param name="delay2" value="0" />
+  <param name="meter_L2" value="0.00217303" />
+  <param name="meter_R2" value="0.00209972" />
+  <param name="level3" value="1" />
+  <param name="active3" value="1" />
+  <param name="phase3" value="0" />
+  <param name="delay3" value="0" />
+  <param name="meter_L3" value="0.00148857" />
+  <param name="meter_R3" value="0.00123741" />
+</preset>
+</plugin>
+<plugin type="xover2" instance-name="X-Over 2 Band (2)" input-index="15" output-index="17">
+<preset bank="0" program="0" plugin="xover2" name="">
+  <param name="level" value="1" />
+  <param name="meter_L" value="0.00305892" />
+  <param name="meter_R" value="0.00300946" />
+  <param name="mode" value="2" />
+  <param name="freq0" value="1628.13" />
+  <param name="level1" value="1" />
+  <param name="active1" value="1" />
+  <param name="phase1" value="0" />
+  <param name="delay1" value="0" />
+  <param name="meter_L1" value="0.00278011" />
+  <param name="meter_R1" value="0.00265078" />
+  <param name="level2" value="0.716978" />
+  <param name="active2" value="1" />
+  <param name="phase2" value="0" />
+  <param name="delay2" value="0" />
+  <param name="meter_L2" value="0.00126379" />
+  <param name="meter_R2" value="0.00107009" />
+</preset>
+</plugin>
+<plugin type="bassenhancer" instance-name="Bass Enhancer" input-index="18" output-index="19">
+<preset bank="0" program="0" plugin="bassenhancer" name="">
+  <param name="bypass" value="0" />
+  <param name="level_in" value="1" />
+  <param name="level_out" value="1" />
+  <param name="amount" value="1.48137" />
+  <param name="meter_in" value="0.00278466" />
+  <param name="meter_out" value="0.00370593" />
+  <param name="clip_in" value="0" />
+  <param name="clip_out" value="0" />
+  <param name="drive" value="8.5" />
+  <param name="blend" value="0" />
+  <param name="meter_drive" value="0.0031374" />
+  <param name="freq" value="100" />
+  <param name="listen" value="0" />
+  <param name="floor_active" value="0" />
+  <param name="floor" value="20" />
+</preset>
+<automation key="automation_v1_3848_to_amount" value="0.625 1" />
+</plugin>
+<plugin type="limiter" instance-name="Limiter" input-index="22" output-index="23">
+<preset bank="0" program="0" plugin="limiter" name="">
+  <param name="bypass" value="0" />
+  <param name="level_in" value="0.0598298" />
+  <param name="level_out" value="0.0598298" />
+  <param name="meter_inL" value="0.043863" />
+  <param name="meter_inR" value="0.0430153" />
+  <param name="meter_outL" value="0.0023695" />
+  <param name="meter_outR" value="0.00249772" />
+  <param name="clip_inL" value="0" />
+  <param name="clip_inR" value="0" />
+  <param name="clip_outL" value="0" />
+  <param name="clip_outR" value="0" />
+  <param name="limit" value="1" />
+  <param name="attack" value="5" />
+  <param name="release" value="50" />
+  <param name="att" value="1" />
+  <param name="asc" value="1" />
+  <param name="asc_led" value="0" />
+  <param name="asc_coeff" value="0.5" />
+  <param name="oversampling" value="1" />
+  <param name="auto_level" value="1" />
+</preset>
+<automation key="automation_v1_3859_to_level_out" value="0 0.5" />
+<automation key="automation_v1_3859_to_level_in" value="0 0.5" />
+</plugin>
+<plugin type="filter" instance-name="Lowpass Filter" input-index="24" output-index="25">
+<preset bank="0" program="0" plugin="filter" name="">
+  <param name="freq" value="20000" />
+  <param name="res" value="0.707" />
+  <param name="mode" value="2" />
+  <param name="inertia" value="20" />
+  <param name="bypass" value="0" />
+  <param name="level_in" value="1" />
+  <param name="level_out" value="1" />
+  <param name="meter_inL" value="0.00250494" />
+  <param name="meter_inR" value="0.00257237" />
+  <param name="meter_outL" value="0.00260366" />
+  <param name="meter_outR" value="0.00268359" />
+  <param name="clip_inL" value="0" />
+  <param name="clip_inR" value="0" />
+  <param name="clip_outL" value="0" />
+  <param name="clip_outR" value="0" />
+</preset>
+<automation key="automation_v1_3850_to_freq" value="0 1" />
+<automation key="automation_v1_3851_to_res" value="0 1" />
+</plugin>
+<plugin type="filter" instance-name="Highpass Filter" input-index="26" output-index="27">
+<preset bank="0" program="0" plugin="filter" name="">
+  <param name="freq" value="10" />
+  <param name="res" value="0.707" />
+  <param name="mode" value="5" />
+  <param name="inertia" value="20" />
+  <param name="bypass" value="0" />
+  <param name="level_in" value="1" />
+  <param name="level_out" value="1" />
+  <param name="meter_inL" value="0.00260366" />
+  <param name="meter_inR" value="0.00268359" />
+  <param name="meter_outL" value="0.00291225" />
+  <param name="meter_outR" value="0.00286517" />
+  <param name="clip_inL" value="0" />
+  <param name="clip_inR" value="0" />
+  <param name="clip_outL" value="0" />
+  <param name="clip_outR" value="0" />
+</preset>
+<automation key="automation_v1_3852_to_freq" value="0 1" />
+<automation key="automation_v1_3853_to_res" value="0 1" />
+</plugin>
+</rack>

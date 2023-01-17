@@ -1,0 +1,25 @@
+#!/bin/sh
+
+pw-link "alsa_input.usb-Native_Instruments_Traktor_Audio_10_639DD95C-00.pro-input-0:capture_AUX2" "Calf Studio Gear:Limiter In #1"
+pw-link "alsa_input.usb-Native_Instruments_Traktor_Audio_10_639DD95C-00.pro-input-0:capture_AUX3" "Calf Studio Gear:Limiter In #2"
+
+pw-link "Calf Studio Gear:Limiter Out #1" "Calf Studio Gear:X-Over 3 Band In #1"
+pw-link "Calf Studio Gear:Limiter Out #2" "Calf Studio Gear:X-Over 3 Band In #2"
+
+
+# arbeitsraum
+#pw-link "Calf Studio Gear:Limiter Out #1" "alsa_output.usb-Native_Instruments_Traktor_Audio_10_639DD95C-00.pro-output-0:playback_AUX6"
+#pw-link "Calf Studio Gear:Limiter Out #2" "alsa_output.usb-Native_Instruments_Traktor_Audio_10_639DD95C-00.pro-output-0:playback_AUX7"
+
+#discoraum
+pw-link "Calf Studio Gear:X-Over 3 Band Out #1" "alsa_output.usb-Native_Instruments_Traktor_Audio_10_639DD95C-00.pro-output-0:playback_AUX0"
+pw-link "Calf Studio Gear:X-Over 3 Band Out #2" "alsa_output.usb-Native_Instruments_Traktor_Audio_10_639DD95C-00.pro-output-0:playback_AUX1"
+pw-link "Calf Studio Gear:X-Over 3 Band Out #3" "alsa_output.usb-Native_Instruments_Traktor_Audio_10_639DD95C-00.pro-output-0:playback_AUX2"
+pw-link "Calf Studio Gear:X-Over 3 Band Out #4" "alsa_output.usb-Native_Instruments_Traktor_Audio_10_639DD95C-00.pro-output-0:playback_AUX3"
+pw-link "Calf Studio Gear:X-Over 3 Band Out #5" "alsa_output.usb-Native_Instruments_Traktor_Audio_10_639DD95C-00.pro-output-0:playback_AUX4"
+pw-link "Calf Studio Gear:X-Over 3 Band Out #6" "alsa_output.usb-Native_Instruments_Traktor_Audio_10_639DD95C-00.pro-output-0:playback_AUX5"
+
+# midi
+pw-link "Midi-Bridge:Native Instruments Traktor Audio 10 at usb-0000:01:00-0-1-1- high speed:(capture_0) Traktor Audio 10 MIDI 1" "Calf Studio Gear:Automation MIDI In"
+pw-link "Midi-Bridge:Native Instruments Traktor Audio 10 at usb-0000:01:00-0-1-2- high speed:(capture_0) Traktor Audio 10 MIDI 1" "Calf Studio Gear:Automation MIDI In"
+
