@@ -1,0 +1,21 @@
+[Unit]
+Description=Frequenzweiche 4
+After=network.target pipewire.service
+
+[Service]
+Type=simple
+#User=feedc0de
+#Group=feedc0de
+Restart=always
+RestartSec=1
+Restart=always
+#ExecStart=calfjackhost -l /home/feedc0de/audio-office4 -n
+#Environment="PIPEWIRE_LATENCY=64/48000"
+ExecStartPre=/bin/sleep 2
+ExecStart=/home/feedc0de/frequenzweiche4.sh
+CPUAffinity=
+CPUAffinity=1-3
+
+[Install]
+WantedBy=default.target
+#WantedBy=multi-user.target
